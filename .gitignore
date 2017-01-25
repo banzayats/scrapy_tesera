@@ -89,5 +89,5 @@ ENV/
 .ropeproject
 
 # JSON output
-.json
-.jl
+*.json
+*.jl

@@ -99,3 +99,28 @@ FEED_EXPORTERS = {
     'jsonlines': 'tesera.settings.MyJsonLinesItemExporter',
     'jl': 'tesera.settings.MyJsonLinesItemExporter',
 }
+
+FEED_EXPORT_FIELDS = [
+	"title_main",
+	"rating_summ",
+	"rating_users",
+	"rating_users_count",
+	"url",
+	"player_number",
+        "player_recomended",
+        "time_game",
+        "time_learn",
+        "num_comments",
+        "num_news",
+        "num_users_own",
+        "num_users_sell",
+        "num_users_buy",
+        "num_users_play",
+        "num_users_want",
+        "num_users_fans",
+        "num_users_diaries",
+        "date"
+]
+
+
+

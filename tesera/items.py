@@ -1,14 +1,27 @@
 # -*- coding: utf-8 -*-
 
-# Define here the models for your scraped items
-#
-# See documentation in:
-# http://doc.scrapy.org/en/latest/topics/items.html
-
-import scrapy
+from scrapy.item import Item, Field
 
 
-class TeseraItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class GameItem(Item):
+    title_main = Field()
+    player_number = Field()
+    player_recomended = Field()
+    time_learn = Field()
+    time_game = Field()
+    rating_summ = Field()
+    rating_users = Field()
+    rating_users_count = Field()
+    num_comments = Field()
+    num_news = Field()
+    num_users_own = Field()
+    num_users_sell = Field()
+    num_users_buy = Field()
+    num_users_play = Field()
+    num_users_want = Field()
+    num_users_fans = Field()
+    num_users_diaries = Field()
+
+    # Housekeeping fields
+    url = Field()
+    date = Field()
