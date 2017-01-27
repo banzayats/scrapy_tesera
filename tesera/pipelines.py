@@ -6,6 +6,9 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 
-class TeseraPipeline(object):
+class TeseraGamePipeline(object):
     def process_item(self, item, spider):
+        if item['year']:
+            item['year'] = item['year'].replace(u'\xa0', '')
+            item['year'] = item['year'][-4:]
         return item

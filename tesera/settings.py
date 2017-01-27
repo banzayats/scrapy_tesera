@@ -65,9 +65,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'tesera.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'tesera.pipelines.TeseraGamePipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -102,6 +102,7 @@ FEED_EXPORTERS = {
 
 FEED_EXPORT_FIELDS = [
 	"title_main",
+        "year",
 	"rating_summ",
 	"rating_users",
 	"rating_users_count",

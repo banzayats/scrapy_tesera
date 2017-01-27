@@ -91,3 +91,6 @@ ENV/
 # JSON output
 *.json
 *.jl
+
+# CSV files
+*.csv

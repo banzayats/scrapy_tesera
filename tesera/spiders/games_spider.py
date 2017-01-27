@@ -22,6 +22,7 @@ class GamesSpider(scrapy.Spider):
 
         yield {
 	    'title_main': extract_with_xpath('//*[@id="game_title"]/span/text()'),
+            'year': extract_with_xpath('//div[@class="leftcol"]/h3/text()'),
 	    'player_number':  extract_with_xpath('//ul[@class="classnav"]/li[1]/text()'),
             'player_recomended':  extract_with_xpath('//ul[@class="classnav"]/li[2]/text()'),
             'time_learn':  extract_with_xpath('//ul[@class="classnav"]/li[4]/text()'),

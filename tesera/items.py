@@ -5,6 +5,7 @@ from scrapy.item import Item, Field
 
 class GameItem(Item):
     title_main = Field()
+    year = Field()
     player_number = Field()
     player_recomended = Field()
     time_learn = Field()
